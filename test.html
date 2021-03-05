@@ -28,9 +28,20 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <h1>GA test</h1>
-  <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const divelement = document.createElement('div')
+      const element = document.createTextNode(window.innerWidth.toString() + "px Wide")
+      const body = document.querySelector('body')
+      console.log(header)
 
-  
+      divelement.style.fontSize = '40px'
+      divelement.appendChild(element)
+
+      body.appendChild(divelement)
+    })
+    
+    
+  </script>
 </body>
 </html>
