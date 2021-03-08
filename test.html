@@ -32,6 +32,7 @@
     document.addEventListener('DOMContentLoaded', () => {
       const divelement = document.createElement('div')
       const element = document.createTextNode(window.innerWidth.toString() + "px Wide")
+      const displaySize= document.createTextNode(window.screen.width.toString() + "px Wide")
       const body = document.querySelector('body')
 
       divelement.style.fontSize = '40px'
